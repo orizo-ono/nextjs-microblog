@@ -15,6 +15,16 @@ export async function getStaticProps() {
   };
 }
 
+// SSRの場合
+
+// export async function getServerSideProps() {
+//   return {
+//     props:{
+//       hogehoge
+//     }
+//   }
+// }
+
 export default function Home({ allPostsData }) {
   return (
     <Layout>
